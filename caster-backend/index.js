@@ -39,7 +39,7 @@ app.post('/generate-chat', async (req, res) => {
         })
 
         console.log('Messages being sent:', messages)
-        console.log('chatText', completion.data.choices[0].message.content, { depth: null })
+        console.log('chatText:', completion.data.choices[0].message.content, { depth: null })
 
         // Extract the chat text from the response
         const chatText = completion.data.choices[0].message.content
